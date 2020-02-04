@@ -169,6 +169,10 @@ table {
       flex-wrap: wrap;
 }
 
+.header__link {
+  display: block;
+}
+
 @media (max-width: 768px), (min-width: 768px) and (max-width: 1200px) {
   .header .nav {
     overflow: hidden;
@@ -176,7 +180,7 @@ table {
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 91.1%;
-    background-size: contain;
+    background-size: 100% 218px;
   }
   .header__nav {
     width: 100vw;
@@ -209,18 +213,18 @@ table {
       height: 100vh;
     }
   }
-  .header__links {
+  .header__items {
     text-align: center;
     max-width: 328px;
     margin: 0 auto;
   }
-  .header__link {
+  .header__item {
     font-size: 1.25rem;
     letter-spacing: 1.36px;
     margin-bottom: 2.2rem;
     font-weight: 700;
   }
-  .header__link a {
+  .header__link {
     color: #ffffff;
     text-decoration: none;
   }
@@ -241,7 +245,7 @@ table {
   .header__hamburger {
     display: none;
   }
-  .header__links {
+  .header__items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -249,18 +253,18 @@ table {
         -ms-flex-align: center;
             align-items: center;
   }
-  .header__link {
+  .header__item {
     margin-left: 1.6875rem;
     font-size: 0.8125rem;
     line-height: 1.0625rem;
     letter-spacing: 1.5008px;
     font-weight: 700;
   }
-  .header__link:hover a {
-    color: #2d2640;
-  }
-  .header__link a {
+  .header__link {
     color: #837d87;
+  }
+  .header__link:hover {
+    color: #2d2640;
   }
   .header__link--active {
     color: #2d2640;
@@ -270,12 +274,7 @@ table {
   }
   .header__link--active:hover {
     background: #2d2640;
-  }
-  .header__link--active:hover a {
     color: #ffffff;
-  }
-  .header__link--active a {
-    color: #2d2640;
   }
   .header .nav .pattern-img {
     display: none;
@@ -306,6 +305,16 @@ table {
   .promo__desc {
     padding: 5.8125rem 0;
   }
+  .promo__desc:before {
+    content: '';
+    background-image: url(/images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: -8.7%;
+    width: 168px;
+    height: 165px;
+  }
   .promo__img-container {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -321,6 +330,7 @@ table {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
   }
   .promo__link {
     position: relative;
@@ -356,6 +366,8 @@ table {
 @media (min-width: 768px) and (max-width: 1200px) {
   .promo {
     display: block;
+    background: #2d2640 url(/images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
   }
   .promo .container {
     display: -webkit-box;
@@ -387,6 +399,17 @@ table {
     padding-top: 6.5rem;
     max-height: 35.6875rem;
     position: relative;
+  }
+  .promo:before {
+    content: '';
+    background-image: url("/images/bg-pattern-intro-right-desktop.svg");
+    width: 436px;
+    height: 593px;
+    position: absolute;
+    top: -79px;
+    right: 0;
+    background-repeat: no-repeat;
+    z-index: 11;
   }
   .promo .container {
     display: -webkit-box;
@@ -790,6 +813,30 @@ a {
 @media (min-width: 1200px) {
   .main {
     padding-top: 5.3125rem;
+  }
+}
+
+@media (max-width: 768px), (min-width: 768px) and (max-width: 1200px) {
+  .promo:after {
+    content: '';
+    background-image: url("/images/bg-pattern-intro-right-mobile.svg");
+    width: 124px;
+    height: 330px;
+    position: absolute;
+    bottom: -177px;
+    right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo:after {
+    content: '';
+    background-image: url("/images/bg-pattern-intro-left-desktop.svg");
+    width: 195px;
+    height: 504px;
+    position: absolute;
+    bottom: -333px;
+    left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

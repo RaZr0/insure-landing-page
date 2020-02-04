@@ -8,6 +8,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    &__link {
+        display: block;
+    }
     @media #{$small},
     #{$medium} {
         .nav {
@@ -16,7 +19,7 @@
             background-repeat: no-repeat;
             background-position-x: right;
             background-position-y: 91.1%;
-            background-size: contain;
+            background-size: 100% 218px;
         }
         &__nav {
             width: 100vw;
@@ -40,20 +43,20 @@
                 }
             }
         }
-        &__links {
+        &__items {
             text-align: center;
             max-width: 328px;
             margin: 0 auto;
         }
-        &__link {
+        &__item {
             font-size: 1.25rem;
             letter-spacing: 1.36px;
             margin-bottom: 2.2rem;
             font-weight: 700;
-            a {
-                color: $white;
-                text-decoration: none;
-            }
+        }
+        &__link {
+            color: $white;
+            text-decoration: none;
         }
         &__link--active {
             padding: 0.9375rem;
@@ -69,21 +72,21 @@
         &__hamburger {
             display: none;
         }
-        &__links {
+        &__items {
             display: flex;
             align-items: center;
         }
-        &__link {
+        &__item {
             margin-left: 1.6875rem;
             font-size: 0.8125rem;
             line-height: 1.0625rem;
             letter-spacing: 1.5008px;
             font-weight: 700;
-            &:hover a {
+        }
+        &__link {
+            color: $Dark-Grayish-Violet;
+            &:hover {
                 color: $Dark-Violet;
-            }
-            a {
-                color: $Dark-Grayish-Violet;
             }
         }
         &__link--active {
@@ -93,12 +96,7 @@
             cursor: pointer;
             &:hover {
                 background: $Dark-Violet;
-            }
-            &:hover a {
                 color: $white;
-            }
-            a {
-                color: $Dark-Violet;
             }
         }
         .nav {

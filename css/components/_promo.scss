@@ -12,6 +12,16 @@
         }
         &__desc {
             padding: 5.8125rem 0;
+            &:before {
+                content: '';
+                background-image: url(/images/bg-pattern-intro-left-mobile.svg);
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                left: -8.7%;
+                width: 168px;
+                height: 165px;
+            }
         }
         &__img-container {
             order: -1;
@@ -22,6 +32,7 @@
     @media #{$small},
     #{$medium} {
         flex-direction: column;
+        position: relative;
         &__link {
             position: relative;
             z-index: 10;
@@ -54,6 +65,8 @@
     }
     @media #{$medium} {
         display: block;
+        background: $Dark-Violet url(/images/bg-pattern-intro-left-mobile.svg);
+        background-repeat: no-repeat;
         .container {
             display: flex;
             align-items: center;
@@ -76,6 +89,17 @@
         padding-top: 6.5rem;
         max-height: 35.6875rem;
         position: relative;
+        &:before {
+            content: '';
+            background-image: url('/images/bg-pattern-intro-right-desktop.svg');
+            width: 436px;
+            height: 593px;
+            position: absolute;
+            top: -79px;
+            right: 0;
+            background-repeat: no-repeat;
+            z-index: 11;
+        }
         .container {
             display: flex;
             z-index: 10;

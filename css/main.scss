@@ -81,3 +81,29 @@ a {
         padding-top: 5.3125rem;
     }
 }
+
+.promo {
+    @media #{$small},
+    #{$medium} {
+        &:after {
+            content: '';
+            background-image: url('/images/bg-pattern-intro-right-mobile.svg');
+            width: 124px;
+            height: 330px;
+            position: absolute;
+            bottom: -177px;
+            right: 0;
+        }
+    }
+    @media #{$large} {
+        &:after {
+            content: '';
+            background-image: url('/images/bg-pattern-intro-left-desktop.svg');
+            width: 195px;
+            height: 504px;
+            position: absolute;
+            bottom: -333px;
+            left: 0;
+        }
+    }
+}
