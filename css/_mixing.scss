@@ -19,7 +19,7 @@
 }
 
 @mixin seperator($color) {
-    @include lg {
+    @media #{$large} {
         .seperator {
             position: relative;
             &:before {

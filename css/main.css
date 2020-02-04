@@ -617,7 +617,7 @@ table {
 }
 
 .footer__top {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid rgba(151, 151, 151, 0.5);
 }
 
 .footer__socials {
@@ -766,7 +766,7 @@ h6 {
   background: white;
 }
 
-@media (min-width: 0) and (max-width: 1200px) {
+@media (max-width: 768px), (min-width: 768px) and (max-width: 1200px) {
   .container {
     width: 85%;
     margin: 0 auto;
@@ -788,7 +788,7 @@ a {
   letter-spacing: 0.6704px;
 }
 
-@media (min-width: 0) and (max-width: 1200px) {
+@media (max-width: 768px), (min-width: 768px) and (max-width: 1200px) {
   .title {
     font-size: 2.5rem;
     line-height: 3rem;

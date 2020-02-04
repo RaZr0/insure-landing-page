@@ -1,7 +1,7 @@
 @import '../breakpoints';
 .footer {
     &__top {
-        border-bottom: 2px solid rgb(151, 151, 151, 0.5);
+        border-bottom: 2px solid rgba(151, 151, 151, 0.5);
     }
     &__socials {
         display: flex;
