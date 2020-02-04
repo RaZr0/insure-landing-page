@@ -18,13 +18,13 @@
             line-height: 1.0625rem;
             margin-bottom: 2.125rem;
         }
-        &__link {
+        &__item {
             font-size: 0.8125rem;
             letter-spacing: 1.5008px;
             line-height: 1.0625rem;
-            a {
-                color: $Dark-Violet;
-            }
+        }
+        &__link {
+            color: $Dark-Violet;
         }
     }
     @media #{$small} {
@@ -48,7 +48,7 @@
         }
         .category {
             margin-top: 2.375rem;
-            &__link {
+            &__item {
                 margin-bottom: 1rem;
             }
         }
@@ -73,9 +73,11 @@
         }
         .category {
             width: 25%;
-            &__link {
+            &__item {
                 margin-bottom: 0.8125rem;
-                a:hover {
+            }
+            &__link {
+                &:hover {
                     text-decoration: underline;
                 }
             }

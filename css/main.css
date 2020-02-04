@@ -647,13 +647,13 @@ table {
   margin-bottom: 2.125rem;
 }
 
-.footer .category__link {
+.footer .category__item {
   font-size: 0.8125rem;
   letter-spacing: 1.5008px;
   line-height: 1.0625rem;
 }
 
-.footer .category__link a {
+.footer .category__link {
   color: #2d2640;
 }
 
@@ -685,7 +685,7 @@ table {
   .footer .category {
     margin-top: 2.375rem;
   }
-  .footer .category__link {
+  .footer .category__item {
     margin-bottom: 1rem;
   }
 }
@@ -722,10 +722,10 @@ table {
   .footer .category {
     width: 25%;
   }
-  .footer .category__link {
+  .footer .category__item {
     margin-bottom: 0.8125rem;
   }
-  .footer .category__link a:hover {
+  .footer .category__link:hover {
     text-decoration: underline;
   }
   .footer__social-link:hover img {
