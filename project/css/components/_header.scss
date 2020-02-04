@@ -1,0 +1,122 @@
+@import '../breakpoints';
+.header {
+    padding: 1.4375rem 0;
+    position: relative;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    @media #{$small},
+    #{$medium} {
+        .nav {
+            overflow: hidden;
+            .pattern-img {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                opacity: 1;
+                width: 100vw;
+                animation: nav-open-pattern .2s;
+                max-height: 218px;
+                @keyframes nav-open-pattern {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &__nav {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            top: 4.9rem;
+            background: #2C2830;
+            padding: 2.5rem 1.5rem 0 1.5em;
+            animation: nav-open .2s;
+            z-index: 999;
+            &.open {
+                display: block;
+            }
+            @keyframes nav-open {
+                from {
+                    height: 0;
+                }
+                to {
+                    height: 100vh;
+                }
+            }
+        }
+        &__links {
+            text-align: center;
+            max-width: 328px;
+            margin: 0 auto;
+        }
+        &__link {
+            font-size: 1.25rem;
+            letter-spacing: 1.36px;
+            margin-bottom: 2.2rem;
+            font-weight: 700;
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+        &__link--active {
+            padding: 0.9375rem;
+            border: 1.5008px solid white;
+        }
+    }
+    @media #{$large} {
+        padding: 1.4375rem 0;
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        background: $white;
+        &__hamburger {
+            display: none;
+        }
+        &__links {
+            display: flex;
+            align-items: center;
+        }
+        &__link {
+            margin-left: 1.6875rem;
+            font-size: 0.8125rem;
+            line-height: 1.0625rem;
+            letter-spacing: 1.5008px;
+            font-weight: 700;
+            &:hover a {
+                color: $Dark-Violet;
+            }
+            a {
+                color: $Dark-Grayish-Violet;
+            }
+        }
+        &__link--active {
+            color: $Dark-Violet;
+            padding: 0.625rem 1.25rem;
+            border: 2px solid $Dark-Violet;
+            cursor: pointer;
+            &:hover {
+                background: $Dark-Violet;
+            }
+            &:hover a {
+                color: $white;
+            }
+            a {
+                color: $Dark-Violet;
+            }
+        }
+        .nav {
+            .pattern-img {
+                display: none;
+            }
+        }
+    }
+}

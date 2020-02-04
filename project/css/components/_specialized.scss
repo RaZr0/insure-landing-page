@@ -1,0 +1,68 @@
+@import '../breakpoints';
+@import '../mixing';
+.specialized {
+    position: relative;
+    @media #{$small},
+    #{$medium} {
+        padding: 11.75rem 0;
+        .pattern-img {
+            position: absolute;
+            right: 0;
+            top: -8.5625rem;
+        }
+        .container {
+            text-align: center;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                border: 1px solid #c396c6;
+                width: 40%;
+                text-align: center;
+                right: 0;
+                left: 0;
+                margin: auto;
+                top: -2.4375rem;
+            }
+        }
+        &__categories {
+            margin-top: 5rem;
+            .category {
+                margin-bottom: 3.5rem;
+                &__title {
+                    margin: 2rem 0 1rem 0;
+                    font-size: 1.75rem;
+                    letter-spacing: .3904px;
+                    line-height: 2.3125rem;
+                }
+                &__desc {
+                    line-height: 1.625rem;
+                }
+            }
+        }
+    }
+    @media #{$large} {
+        padding-top: 19rem;
+        .pattern-img-left {
+            position: absolute;
+            top: -10.625rem;
+            left: 0px;
+        }
+        .container {
+            padding-top: 3.9375rem;
+        }
+        &__categories {
+            margin-top: 6rem;
+            display: flex;
+            .category {
+                margin-right: 1.9375rem;
+                &__title {
+                    margin: 2rem 0 1rem 0;
+                    font-size: 1.75rem;
+                    line-height: 2.3125rem;
+                }
+            }
+        }
+        @include seperator(#C396C6);
+    }
+}

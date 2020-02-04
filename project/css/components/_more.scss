@@ -1,0 +1,53 @@
+@import '../breakpoints';
+.more {
+    .container {
+        background: $Dark-Violet;
+        color: $white;
+    }
+    &__link {
+        position: relative;
+        z-index: 10;
+    }
+    @media #{$small},
+    #{$medium} {
+        margin-bottom: 8.75rem;
+        .container {
+            text-align: center;
+            padding: 4.5rem 1.5rem;
+            position: relative;
+            .pattern-img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1;
+                height: 100%;
+            }
+        }
+        &__title {
+            margin-bottom: 2.5rem;
+            position: relative;
+            z-index: 10;
+        }
+    }
+    @media #{$large} {
+        margin-top: 6.25rem;
+        .container {
+            position: relative;
+            padding: 55px 81px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .pattern-img-right {
+                position: absolute;
+                top: 0px;
+                right: 0;
+                height: 100%;
+            }
+        }
+        &__title {
+            line-height: 56px;
+            max-width: 54%;
+            font-size: 56px;
+        }
+    }
+}

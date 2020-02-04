@@ -1,0 +1,81 @@
+@import 'mixing';
+@import 'reset';
+@import 'components/header';
+@import 'components/promo';
+@import 'components/specialized';
+@import 'components/more';
+@import 'components/footer';
+// GENERAL START
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Karla';
+    &.mobile-nav-open {
+        overflow: hidden;
+        position: fixed;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'DM Serif Display';
+}
+
+.insure-button {
+    display: inline-block;
+    font-size: 0.8125rem;
+    letter-spacing: 1.5008px;
+    line-height: 1.0625rem;
+    padding: 0.625rem 1.5625rem;
+    font-weight: 700;
+    color: $white;
+    border: 1.5008px solid $white;
+    &:hover {
+        color: $Dark-Violet;
+        background: white;
+    }
+}
+
+@include sm-and-md {
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@include lg {
+    .container {
+        max-width: 1112px;
+        margin: 0 auto;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    letter-spacing: 0.6704px;
+    @include sm-and-md {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    @include lg {
+        font-size: 4.5rem;
+        line-height: 4rem;
+    }
+}
+
+// GENERAL END
+.main {
+    @include lg {
+        padding-top: 5.3125rem;
+    }
+}

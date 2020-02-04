@@ -1,0 +1,35 @@
+@import './breakpoints';
+@import './colors';
+@media #{$small} {
+    .hide-in-sm {
+        display: none;
+    }
+}
+
+@media #{$medium} {
+    .hide-in-md {
+        display: none;
+    }
+}
+
+@media #{$large} {
+    .hide-in-lg {
+        display: none;
+    }
+}
+
+@mixin seperator($color) {
+    @include lg {
+        .seperator {
+            position: relative;
+            &:before {
+                content: '';
+                border: .5px solid $color;
+                width: 150px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}

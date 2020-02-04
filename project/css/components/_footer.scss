@@ -1,0 +1,89 @@
+@import '../breakpoints';
+.footer {
+    &__top {
+        border-bottom: 2px solid rgb(151, 151, 151, 0.5);
+    }
+    &__socials {
+        display: flex;
+    }
+    &__social-link {
+        margin-right: 1rem;
+    }
+    .category {
+        &__title {
+            font-weight: 700;
+            color: #837D88;
+            font-size: 0.8125rem;
+            letter-spacing: 1.5px;
+            line-height: 1.0625rem;
+            margin-bottom: 2.125rem;
+        }
+        &__link {
+            font-size: 0.8125rem;
+            letter-spacing: 1.5008px;
+            line-height: 1.0625rem;
+            a {
+                color: $Dark-Violet;
+            }
+        }
+    }
+    @media #{$small} {
+        background: $Very-Light-Gray url('/images/bg-pattern-footer-mobile.svg') no-repeat;
+    }
+    @media #{$small},
+    #{$medium} {
+        text-align: center;
+        background-size: contain;
+        padding-bottom: 5.3125rem;
+        &__top {
+            padding: 5.5rem 0 2.5rem 0;
+            margin-bottom: 2.5rem;
+        }
+        &__logo {
+            display: block;
+            margin-bottom: 2rem;
+        }
+        &__socials {
+            justify-content: center;
+        }
+        .category {
+            margin-top: 2.375rem;
+            &__link {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    @media #{$medium},
+    #{$large} {
+        background: $Very-Light-Gray url('/images/bg-pattern-footer-desktop.svg') no-repeat;
+    }
+    @media #{$medium},
+    #{$large} {
+        padding-bottom: 3rem;
+        margin-top: 9.375rem;
+        &__top {
+            display: flex;
+            padding: 4.1875rem 0 2.3125rem 0;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__sitemap {
+            display: flex;
+            margin-top: 3rem;
+        }
+        .category {
+            width: 25%;
+            &__link {
+                margin-bottom: 0.8125rem;
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        &__social-link {
+            &:hover img {
+                filter: brightness(0.4);
+            }
+        }
+    }
+}
