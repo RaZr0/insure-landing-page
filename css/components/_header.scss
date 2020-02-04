@@ -12,23 +12,11 @@
     #{$medium} {
         .nav {
             overflow: hidden;
-            .pattern-img {
-                position: fixed;
-                bottom: 0;
-                right: 0;
-                opacity: 1;
-                width: 100vw;
-                animation: nav-open-pattern .2s;
-                max-height: 218px;
-                @keyframes nav-open-pattern {
-                    from {
-                        opacity: 0;
-                    }
-                    to {
-                        opacity: 1;
-                    }
-                }
-            }
+            background: $Dark-Violet url(/images/bg-pattern-mobile-nav.svg);
+            background-repeat: no-repeat;
+            background-position-x: right;
+            background-position-y: 91.1%;
+            background-size: contain;
         }
         &__nav {
             width: 100vw;

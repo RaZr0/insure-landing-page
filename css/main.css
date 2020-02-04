@@ -172,32 +172,11 @@ table {
 @media (max-width: 768px), (min-width: 768px) and (max-width: 1200px) {
   .header .nav {
     overflow: hidden;
-  }
-  .header .nav .pattern-img {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    opacity: 1;
-    width: 100vw;
-    -webkit-animation: nav-open-pattern .2s;
-            animation: nav-open-pattern .2s;
-    max-height: 218px;
-  }
-  @-webkit-keyframes nav-open-pattern {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes nav-open-pattern {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    background: #2d2640 url(/images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 91.1%;
+    background-size: contain;
   }
   .header__nav {
     width: 100vw;
@@ -554,7 +533,6 @@ table {
 }
 
 .more .container {
-  background: #2d2640;
   color: #ffffff;
 }
 
@@ -568,6 +546,9 @@ table {
     margin-bottom: 8.75rem;
   }
   .more .container {
+    background: #2d2640 url(/images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
     text-align: center;
     padding: 4.5rem 1.5rem;
     position: relative;
@@ -591,6 +572,10 @@ table {
     margin-top: 6.25rem;
   }
   .more .container {
+    background: #2d2640 url(/images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: auto 100%;
     position: relative;
     padding: 55px 81px;
     display: -webkit-box;
