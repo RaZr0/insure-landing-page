@@ -1,5 +1,6 @@
 @import './breakpoints';
 @import './colors';
+@import './fonts';
 @media #{$small} {
     .hide-in-sm {
         display: none;
