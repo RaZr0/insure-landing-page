@@ -62,6 +62,11 @@
             padding: 0.9375rem;
             border: 1.5008px solid white;
         }
+        &__menu-toggle {
+            border: 0;
+            padding: 0;
+            outline: 0;
+        }
     }
     @media #{$large} {
         padding: 1.4375rem 0;

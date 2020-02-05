@@ -19,8 +19,8 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="/" class="header__logo logo"><img src="images/logo.svg" alt="logo"></a>
-            <img class="header__hamburger hide-in-lg" src="/images/icon-hamburger.svg" alt="header-hamburger-close">
+            <a href="/" aria-label="homepage link" class="header__logo logo" alt="homepage"><img src="images/logo.svg" alt="logo"></a>
+            <button class="header__menu-toggle hide-in-lg" onclick="insureApp.toggleMenu(this)" aria-label="navigation menu"><img class="header__hamburger-img" src="/images/icon-hamburger.svg" alt=""></button>
             <nav class="header__nav nav hide-in-sm hide-in-md">
                 <ul class="header__items">
                     <li class="header__item"><a class="header__link" href="/">HOW WE WORK</a></li>
